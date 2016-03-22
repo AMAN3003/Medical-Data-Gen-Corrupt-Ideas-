@@ -46,3 +46,16 @@ Based on the Probability of the above errors we will generate the corrupted bloo
 * **(Dependency)**-Visual acuity (Categorical attribute) depends on the Age(Continuous) and the Sex(Continuous).The decline of acuity with age is clearly evident in the survey data for both men and women.The proportion with at least normal vision starts dropping rapidly after 45 years of age.The distance vision  rapidly falls from (70-80 %)under 45 years to(below 10 %) above 65 years.Using the percentage distribution level of adults reaching specified acuity level for the  distance vision by age and sex we can generate the vision acuity for different age interval with their percentage acuity for the interval and use this a lookup file.
 * **(Error and variation)** - a) Sampling and Measurement errors
 Using the relative standard errors survey data we can generate the visual acuity with slight variation
+
+**[ 7 ]**
+**Heart Diseases**
+* **(Dependency)**-heart diseases depends on Age, Sex, chest pain,blood pressure,high glucose level,resting electrocardiographic(ECG) results,maximum heart rate,general cardiac enlargement
+Heart Diseases is further classified based on the age ,sex plus above value as
+a)Hypertensive heart diseases- Hypertension plus left bundle block by ecg or gce and high glucose
+b)Coronary heart diseases-ecg results or chest pain,high glucose level
+c)other heart diseases
+Heart diseases were more in women compared to men. heart diseases rose sharply with the age for both men and the women. Based on the health survey distribution data - percentage of people suffering from different heart diseases vs the age interval we would generate the type of heart diseases the person is suffering from.
+* **error and variation-** a) Sampling and measurement error b)error in the dependency attributes like error in ECG,blood pressure etc
+Using the standard errors of estimate health survey data percentage of people suffering from different heart diseases vs the age interval we could corrupt the heart diseases.
+Based on the error in the dependency attribute there may be chance to generate different heart diseases type indeed the one required to be generated.
+
