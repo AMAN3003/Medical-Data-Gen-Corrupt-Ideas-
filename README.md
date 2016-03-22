@@ -29,3 +29,15 @@ Based on the Probability of the above errors we will generate corrupted RPR.
 * **(Dependency)** Blood Glucose Level(Continuous attribute) depends on the Age(Continuous) and the Sex(Continuous).It rises steadily with age for both the sexes however, the level is consistently slightly higher for women than for men. Using  the Health Survey Statistics we would generate the glucose level  based on different Age Interval and then on sex.
 * **(Error and variation)**-In real world glucose level data are imperfect for two major reason: a)Sampling Errors b) The design of the Survey (glucose tolerance test)    
 For the Sampling Errors we can use the standard error(from the survey data) in the  mean glucose level measurement for different age intervals to generate corrupted glucose level value.For the variation in glucose level generation we can use the result of different health surveys glucose level data and generate the glucose levels based on their statistics with probability assigned to each health survey data
+
+**[ 5 ]**
+**Blood pressure**-Blood pressure (BP) is the pressure exerted by circulating blood upon the walls of blood vessels.It is usually expressed in terms of the systolic (maximum) pressure over diastolic (minimum) pressure and is measured in mm (Hg).
+* **(Dependency)**-Blood Pressure(Continuous) depends on Age(Continuous) and then on  Sex(Continuous).Systolic blood pressure rises steeply with the age.while diastolic blood pressure rises until the age of [45-54] for men and [55-64] for the women,after which they decline.At younger age blood pressure are higher for men then women,and at older stage this is reversed.Using the Distribution(% of the specified Age-Interval vs  bp values) data of the systolic and diastolic blood pressure of adults,by age and sex,Australia we will create systolic and diastolic bp for different age interval ,sex and use this lookup file to generate Blood Pressure.
+* **(Error and variation)**-Real world data error in Blood Pressure Measurement are due:
+a)Standard errors in Estimation of bp b)Incorrect Position of Patient Body c)Wrong size
+Cuff used d) Cuff placed incorrectly.    
+ Using the relative standard errors of estimate health survey data for different age interval vs different systolic and diastolic interval we can  generate the corrupted systolic and diastolic bp.
+With the incorrect position of the Patient body we get 1.86 mm(hg) measurement errors
+While incorrect placement of the cuff result in 10 mm(hg) difference between the right and left arm measurement,whereas incorrect position of cuff result in variation of systolic and diastolic values with (2-8mm) rise or drop.
+Based on the Probability of the above errors we will generate the corrupted blood pressure
+
