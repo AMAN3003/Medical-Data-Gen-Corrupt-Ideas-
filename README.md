@@ -24,4 +24,8 @@ c)Human error overlooking ,calculation mistake
 Average errors of RPR  were 1.89, 1.89 and 1.80 bpm for standing, sitting and supine positions of patients.Resting Time given before measuring RPR to patients depends on the survey results in error in data. Human errors result in slight variation in RPR.
 Based on the Probability of the above errors we will generate corrupted RPR.
 
-
+**[ 4 ]**
+**Glucose Level**-The amount of glucose (“sugar”, measured in mg/dL) in your blood changes throughout the day and night. Your levels will change depending upon when, what and how much you have eaten, and whether or not you have exercised.
+* **(Dependency)** Blood Glucose Level(Continuous attribute) depends on the Age(Continuous) and the Sex(Continuous).It rises steadily with age for both the sexes however, the level is consistently slightly higher for women than for men. Using  the Health Survey Statistics we would generate the glucose level  based on different Age Interval and then on sex.
+* **(Error and variation)**-In real world glucose level data are imperfect for two major reason: a)Sampling Errors b) The design of the Survey (glucose tolerance test)    
+For the Sampling Errors we can use the standard error(from the survey data) in the  mean glucose level measurement for different age intervals to generate corrupted glucose level value.For the variation in glucose level generation we can use the result of different health surveys glucose level data and generate the glucose levels based on their statistics with probability assigned to each health survey data
