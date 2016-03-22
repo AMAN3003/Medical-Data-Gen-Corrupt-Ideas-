@@ -13,4 +13,15 @@
 a)Error caused by personal technique(Inadequate Mixing Blood) b)errors in  Hemacytometry c)platelets counting errors d)Sampling and Measurement errors
 Based on the Probability of the above errors we will generate the corrupted Hemoglobin
 
+**[ 3 ]**
+**Resting Pulse Rate(RPR)**-Resting Pulse Rate or Heart Rate is the number of times your heart beats per minute. Normal heart rate varies from person to person.
+* **(Dependency)** RPR (Continuous) depends on the age(Continuous) and then on sex(Categorical). RPR is inversely associated with age.RPR decreased significantly with increasing age for children and adolescents of both sexes. For male RPR plateaus to steady state level at adult while it plateaus much later in adulthood for female.The frequency distribution of RPR by age groups and sex approx to a normal distribution used to generate RPR
+* **(Error and variation)** in real world RPR has imperfect data for three major reasons:
+a)Position of Patients while measuring RPR 
+b)The design of the survey(Resting time) 
+c)Human error overlooking ,calculation mistake
+
+Average errors of RPR  were 1.89, 1.89 and 1.80 bpm for standing, sitting and supine positions of patients.Resting Time given before measuring RPR to patients depends on the survey results in error in data. Human errors result in slight variation in RPR.
+Based on the Probability of the above errors we will generate corrupted RPR.
+
 
