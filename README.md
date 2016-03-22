@@ -40,4 +40,9 @@ Cuff used d) Cuff placed incorrectly.
 With the incorrect position of the Patient body we get 1.86 mm(hg) measurement errors
 While incorrect placement of the cuff result in 10 mm(hg) difference between the right and left arm measurement,whereas incorrect position of cuff result in variation of systolic and diastolic values with (2-8mm) rise or drop.
 Based on the Probability of the above errors we will generate the corrupted blood pressure
-
+ 
+**[ 6 ]**
+**Visual Acuity**-clarity of the visions.
+* **(Dependency)**-Visual acuity (Categorical attribute) depends on the Age(Continuous) and the Sex(Continuous).The decline of acuity with age is clearly evident in the survey data for both men and women.The proportion with at least normal vision starts dropping rapidly after 45 years of age.The distance vision  rapidly falls from (70-80 %)under 45 years to(below 10 %) above 65 years.Using the percentage distribution level of adults reaching specified acuity level for the  distance vision by age and sex we can generate the vision acuity for different age interval with their percentage acuity for the interval and use this a lookup file.
+* **(Error and variation)** - a) Sampling and Measurement errors
+Using the relative standard errors survey data we can generate the visual acuity with slight variation
